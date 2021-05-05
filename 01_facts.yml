@@ -17,7 +17,3 @@
   - name: Debug Facts SeLinux Status - Dictionary
     ansible.builtin.debug:
       msg: "{{ ansible_facts['selinux'] }}"
-
-  - name: SRE tjek windows
-    ansible.windows.win_package:
-      msg: "{{ ansible_facts['use_proxy'] }}"
