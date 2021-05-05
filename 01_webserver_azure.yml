@@ -1,5 +1,5 @@
 ---
-- hosts: ansible-sre
+- hosts: tag_solution_webserver_sre
   become: yes
   vars:
     websiteheader: "Ansible Playbook"
