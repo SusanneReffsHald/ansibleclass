@@ -1,0 +1,11 @@
+---
+- name: "Promote to DC"
+  hosts: server3
+  tasks:
+    - name: "Setup DC"
+      win_domain_controller:
+        dns_domain_name: testdomain.local
+        domain_admin_user: sre@testdomain.local
+        domain_admin_password: Simcorp1
+        safe_mode_password: Simcorp1
+        state: domain_controller
