@@ -1,3 +1,4 @@
+---
 # Display facts from all hosts and store them indexed by I(hostname) at C(/tmp/facts).
 # ansible all -m ansible.builtin.setup --tree /tmp/facts
 
@@ -10,9 +11,9 @@
 # Collect only facts returned by facter.
 # ansible all -m ansible.builtin.setup -a 'gather_subset=!all,!any,facter'
 
-- name: Collect only facts returned by facter
-  ansible.builtin.setup:
-  gather_subset:
+  - name: Collect only facts returned by facter
+    ansible.builtin.setup:
+    gather_subset:
     - '!all'
     - '!any'
     - facter
