@@ -65,7 +65,7 @@
 
   - name: Set Fact webserver_ip_fact
     set_fact:
-    webserver_ip_fact: "{{ webserver.instance.ipv4 }}"
+      webserver_ip_fact: "{{ webserver.instance.ipv4 }}"
 
   - name: IP address info
     debug:
