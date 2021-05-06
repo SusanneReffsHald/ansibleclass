@@ -4,8 +4,8 @@
 
   vars_prompt:
   - name: password
-      prompt: VCenter Password
-      private: no
+    prompt: VCenter Password
+    private: no
 
   environment:
     VMWARE_USER: administrator@vsphere.local
