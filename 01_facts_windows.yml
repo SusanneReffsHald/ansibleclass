@@ -12,10 +12,10 @@
 
 - name: Collect only facts returned by facter
   ansible.builtin.setup:
-    gather_subset:
-      - '!all'
-      - '!any'
-      - facter
+  gather_subset:
+    - '!all'
+    - '!any'
+    - facter
 
 # Display only facts about certain interfaces.
 # ansible all -m ansible.builtin.setup -a 'filter=ansible_eth[0-2]'
