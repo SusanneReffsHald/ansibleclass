@@ -3,8 +3,8 @@
   remote_user: "user"
   become: "yes"
   vars:
-    websiteheader: "Ansible Playbook in vmware"
-    websiteauthor: "Ansible trainee"
+    websiteheader: "Ansible Playbook Fantastico"
+    websiteauthor: "SRE helped by script"
 
   roles:
   - jesperberth.el_httpd
